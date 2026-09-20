@@ -14,17 +14,15 @@ class Solution:
             if not level:
                 return
             new = []
-            for i in range(len(level) - 1):
-                level[i].next = level[i + 1]
-                if not level[i].left:
-                    continue
-                new.append(level[i].left)
-                new.append(level[i].right)
-
-            level[-1].next = None
-            if level[-1].left:
-                new.append(level[-1].left)
-                new.append(level[-1].right)
+            for i in range(len(level)):
+                if i == len(level) - 1:
+                    level[i].next = None
+                else:
+                    level[i].next = level[i + 1]
+                if level[i].left:
+                    new.append(level[i].left)
+                if level[i].right:
+                    new.append(level[i].right)
 
             bfs(new)
 
