@@ -47,3 +47,4 @@ class LRUCache:
             if len(self.map) > self.cap:
                 lastkey = self._pop()
                 self.map.pop(lastkey)
+    
