@@ -1,25 +1,12 @@
 class Solution {
     public int maxArea(int[] height) {
-        var q = new ArrayDeque<Integer>(); // push, remove, peek
-        var res = 0;
-
-
-        for(int i = 0; i < height.length; i++) {
-            while (!q.isEmpty() && height[q.peek()] <= height[i]) {
-                var index = q.remove();
-                res = Math.max(res, (i - index) * height[index]);
-            }
-            q.push(i);
+        int left = 0, right = height.length - 1, res = 0;
+        while (left < right) {
+            res = Math.max(res, (right - left) * Math.min(height[left], height[right]));
+            if (height[left] < height[right]) left++;
+            else right --;
         }
 
-        while (q.size() > 1) {
-            var index = q.remove();
-
-            System.out.println(index);
-            System.out.println(q.peek());
-
-            res = Math.max(res, (index - q.peek()) * height[index]);
-        }
         return res;
     }
 }
