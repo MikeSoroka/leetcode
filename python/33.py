@@ -12,7 +12,6 @@ class Solution:
 
                 print(left, right)
 
-
             return -1 if arr[left] != target else left
 
         if len(nums) == 1:
@@ -41,7 +40,6 @@ class Solution:
             else:
                 start = right
 
-
         arr1 = nums[0:start]
         arr2 = nums[start:len(nums)]
 
@@ -55,4 +53,3 @@ class Solution:
 
         return -1
 
-        
