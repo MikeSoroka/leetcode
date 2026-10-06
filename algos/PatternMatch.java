@@ -6,6 +6,37 @@ class PatternMatch {
 
     //TODO: Add Z-Algorithm, Rabin-Karp, something else?
 
+    public static List<Integer> findZ(String str, String pattern) {
+        if (pattern.isEmpty()) return new ArrayList<Integer>();
+
+        var augmented = pattern + "#" + str;
+        var zScore = new int[augmented.length()];
+        var left = 0, right = 1;
+
+        for (var i = 1; i < augmented.length(); i++) {
+            if (right < i) right = i;
+            var score = Math.min(right - i, zScore[i - left]);
+
+            if (score == right - i) {
+                while (right < augmented.length() && augmented.charAt(score) == augmented.charAt(right)) {
+                    score++;
+                    right++;
+                }
+
+                left = i;
+            }
+
+            zScore[i] = score;
+        }
+
+        var res = new ArrayList<Integer>();
+        for (var i = 0; i < zScore.length; i++) {
+            if (zScore[i] == pattern.length()) res.add(i - pattern.length() - 1);
+        }
+
+        return res;
+    }
+
     public static List<Integer> findKMP(String str, String pattern) {
         var lps = calculateLPS(pattern);
         var match = 0;

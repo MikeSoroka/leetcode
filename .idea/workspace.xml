@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2faa4d5f-2160-40c0-8ff6-c051afc5bde2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algos/PatternMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/algos/PatternMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,8 @@
       <workItem from="1790966248412" duration="5992000" />
       <workItem from="1791039429378" duration="5444000" />
       <workItem from="1791126344123" duration="6780000" />
-      <workItem from="1791233097120" duration="647000" />
+      <workItem from="1791233097120" duration="2408000" />
+      <workItem from="1791273540173" duration="1256000" />
     </task>
     <servers />
   </component>
