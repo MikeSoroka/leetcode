@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2faa4d5f-2160-40c0-8ff6-c051afc5bde2" name="Changes" comment="" />
+    <list default="true" id="2faa4d5f-2160-40c0-8ff6-c051afc5bde2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/134.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/134.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +37,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ritter/IT/ktu-ml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ritter/IT/sppech-recognition&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -43,6 +46,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="leetcode" />
@@ -120,6 +128,10 @@
       <workItem from="1793735633485" duration="44000" />
       <workItem from="1794173448793" duration="60000" />
       <workItem from="1794173827114" duration="7000" />
+      <workItem from="1794272958954" duration="91000" />
+      <workItem from="1794691096480" duration="19000" />
+      <workItem from="1794775390826" duration="347000" />
+      <workItem from="1794799761867" duration="725000" />
     </task>
     <servers />
   </component>
